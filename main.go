@@ -1,6 +1,6 @@
 package main
 import ("errors";"fmt";"strings")
-var moduleName = "raft-peer-d6f8c8"
+var moduleName = "raft-peer-ccea76"
 type AppError struct{Op string;Err error}
 func (e *AppError) Error() string{return fmt.Sprintf("[%s] %s: %v",moduleName,e.Op,e.Err)}
 func (e *AppError) Unwrap() error{return e.Err}
